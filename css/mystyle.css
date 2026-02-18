@@ -355,3 +355,10 @@ Page-Specific Styles
     margin-left: auto;
     max-width: 60%;
 }
+
+@media (max-width: 993px) {
+    .project-detail-visuals,
+    .project-detail-visuals-1 {
+        max-width: 80%;
+    }
+}
