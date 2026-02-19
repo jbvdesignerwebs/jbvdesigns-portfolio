@@ -25,6 +25,20 @@ Global Styles and UI Components
 .card-img-top {
     object-fit: cover;
     display: block;
+    height: 300px;
+}
+
+.card:hover {
+    box-shadow: 0 10px 20px rgba(20, 10, 10, 0.5);
+    transform:translateY(-10px);
+}
+
+a,
+button,
+.card,
+.nav-link,
+.navbar-brand {
+    transition: 0.2s ease;
 }
 
 .dropdown-menu {
@@ -37,7 +51,6 @@ Global Styles and UI Components
     border: solid 5px #FFFFFF;
     font-size: 28px;
     background-color: white;
-    color: #FFFFFF;
 }
 
 .btn.btn-primary {
@@ -84,7 +97,7 @@ Global Styles and UI Components
     padding-top: 15px;
     border-width: 7px;
     color: #00cd96;
-    opacity: 100%;
+    opacity: 1;
 }
 
 /********************************
@@ -94,6 +107,20 @@ h1 {
     font-family: "Fredoka", sans-serif;
     font-size: 80px;
     font-weight: 700;
+}
+
+@media screen and (max-width: 993px) {
+    h1 {
+        font-size: 65px;
+        text-align: center;
+    }
+
+    .Hero-text {
+        text-align: center;
+        padding: 0%;
+        max-width: 100%;
+    }
+    
 }
 
 h2 {
@@ -147,7 +174,14 @@ p {
     font-size: 20px;
 }
 
-.Hero-text, h1, h2, p, .nav-item, .dropdown, .nav-link, .navbar-brand{
+.Hero-text,
+h1,
+h2,
+p,
+.nav-item,
+.dropdown,
+.nav-link,
+.navbar-brand {
     color: #FFFFFF;
 }
 
@@ -166,9 +200,7 @@ p {
     font-family: "Didact Gothic", sans-serif;
     font-weight: 400;
     font-size: 17px;
-    padding-right: 30px;
-    font-weight: 750;
-}
+    padding-right: 30px;}
 
 .navbar-nav {
     margin-left: auto;
@@ -192,19 +224,7 @@ p {
 
 .Hero-text {
     max-width: 600px;
-    padding: 125px 40px;
-}
-
-/* Responsive Hero */
-@media (max-width: 993px) {
-    .background1 {
-        justify-content: center;
-        text-align: center;
-    }
-
-    .Hero-text {
-        padding: 40px 20px;
-    }
+    padding: 100px 50px;
 }
 
 
@@ -290,6 +310,17 @@ Page-Specific Styles
     justify-content: flex-end;
 }
 
+@media (max-width: 993px) {
+    .background1 {
+        justify-content: center;
+        text-align: center;
+    }
+
+    .Hero-text {
+        padding: 40px 20px;
+    }
+}
+
 .Showcase-section,
 .Showcase-section-1,
 .BrandingDesign{
@@ -299,7 +330,8 @@ Page-Specific Styles
 .Showcase-section,
 .Showcase-section-1,
 .BrandingDesign,
-.Service-design{
+.Service-design,
+.AboutDesign {
    background-image: url(../images/Showcase-Background.png);
    background-size: cover;
    background-repeat: no-repeat;
@@ -345,7 +377,7 @@ Page-Specific Styles
 .Service-break {
     border-width: 5px;
     width: 60%;
-    opacity: 100%;
+    opacity: 1;
     margin: 0;
     padding-bottom: 24px;
     color: #271C1C;
