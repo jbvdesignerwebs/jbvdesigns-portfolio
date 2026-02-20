@@ -355,8 +355,7 @@ Page-Specific Styles
 @media (max-width: 993px) {
     .About-image {
         max-width: 90%;
-        text-align: center;
-        align-items: center;
+        justify-content: center;
     }
 }
 
