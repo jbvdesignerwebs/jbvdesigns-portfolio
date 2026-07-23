@@ -301,13 +301,23 @@ Page-Specific Styles
 }
 
 .background1 {
-    background-image: url(../images/hero_section.webp);
-    background-repeat: no-repeat;
+    position: relative;
+    background-image: url("../images/hero_section.webp");
     background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
 
-    display: flex;
-    align-items: center;
-    justify-content: flex-end;
+.background1::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background: rgba(20, 10, 10, 0.25); /* Adjust opacity here */
+}
+
+.background1 > * {
+    position: relative;
+    z-index: 1;
 }
 
 @media (max-width: 993px) {
