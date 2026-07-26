@@ -185,7 +185,8 @@ p,
 .nav-link,
 .navbar-brand,
 .footer-links,
-.services-list {
+.services-list,
+.project-detail-h3 {
     color: #FFFFFF;
 }
 
@@ -253,8 +254,8 @@ p,
 .project-detail-h3 {
     font-family: "Didact Gothic", sans-serif;
     font-weight: 700;
-    color: #140A0A;
     font-size: 30px;
+    font-style: italic;
 }
 
 .project-detail-body {
