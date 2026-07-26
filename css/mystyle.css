@@ -53,10 +53,15 @@ button,
     background-color: white;
 }
 
+.btn.btn-primary,
+.btn.btn-secondary,
+p {
+    font-size: 20px;
+}
+
 .btn.btn-primary {
     background-color: #271C1C;
     border: none;
-    font-size: 20px;
     font-weight: 700;
 }
 
@@ -67,7 +72,6 @@ button,
 .btn.btn-secondary {
     background-color: #00cd96;
     border: none;
-    font-size: 20px;
     color: #140A0A;
     font-weight: 700;
 }
@@ -103,15 +107,75 @@ button,
 /********************************
 Typography
 **********************************/
-h1 {
+h1,
+.navbar-brand,
+.hero-headline,
+.card-link,
+.footer-heading {
     font-family: "Fredoka", sans-serif;
+}
+
+h2,
+.project-background-title-1,
+.project-background-title-2 {
+    font-family: "Darker Grotesque", sans-serif;
+}
+
+p,
+.nav-item, 
+.dropdown, 
+.nav-link,
+.project-detail-h3,
+.footer-links {
+    font-family: "Didact Gothic", sans-serif;
+}
+
+h1 {
     font-size: 80px;
     font-weight: 700;
+}
+
+.dropend,
+.dropend:focus,
+.dropend:active,
+.dropdown-toggle,
+.dropdown-item,
+.Section-title-2 {
+    color: #140A0A;
+}
+
+.Hero-text,
+.Content-title,
+.dropdown-menu.dropdown-menu-dark,
+.dropdown-item:hover,
+.dropdown-item:focus,
+h1,
+h2,
+p,
+.nav-item,
+.dropdown,
+.nav-link,
+.navbar-brand,
+.footer-links,
+.services-list,
+.project-detail-h3 {
+    color: #FFFFFF;
+}
+
+.hero-headline,
+.nav-link:hover,
+.nav-link:focus,
+.nav-item:hover,
+.navbar-brand:hover,
+#navbarDarkDropdownMenuLink:focus,
+.dropdown-item:focus,
+.card-link,
+.footer-heading {
     color:#00cd96;
 }
 
 @media screen and (max-width: 993px) {
-    h1 {
+    .hero-headline {
         font-size: 65px;
         text-align: center;
         color: #FFFFFF;
@@ -126,10 +190,14 @@ h1 {
 }
 
 h2 {
-    font-family: "Darker Grotesque", sans-serif;
-    font-size: 40px;
     font-weight: 500;
     line-height: 60px;
+}
+
+h2,
+.project-background-title-1,
+.project-background-title-2 {
+    font-size: 40px;
 }
 
 .Section-title, .Section-title-2 {
@@ -146,52 +214,21 @@ h2 {
     font-weight: 600;
 }
 
-.dropend,
-.dropend:focus,
-.dropend:active,
-.dropdown-toggle,
-.dropdown-item,
-.Section-title-2 {
-    color: #140A0A;
-}
-
-.dropdown-menu.dropdown-menu-dark .dropdown-item:hover{
-    background-color: #140A0A;
-}
-
+.dropdown-menu.dropdown-menu-dark .dropdown-item:hover,
 .dropdown-menu.dropdown-menu-dark .dropdown-item:focus{
     background-color: #140A0A;
 }
 
-.Showcase-title, .Content-title {
+.Showcase-title, 
+.Content-title {
     font-weight: 600;
 }
 
 p {
-    font-family: "Didact Gothic", sans-serif;
     font-weight: 400;
-    font-size: 20px;
-}
-
-.Hero-text,
-.Content-title,
-.dropdown-menu.dropdown-menu-dark,
-.dropdown-item:hover,
-.dropdown-item:focus,
-h2,
-p,
-.nav-item,
-.dropdown,
-.nav-link,
-.navbar-brand,
-.footer-links,
-.services-list,
-.project-detail-h3 {
-    color: #FFFFFF;
 }
 
 .navbar-brand {
-    font-family: "Fredoka", sans-serif;
     font-weight: 800;
     font-size: 45px;
     padding-left: 30px;
@@ -202,7 +239,6 @@ p,
 }
 
 .nav-item, .dropdown, .nav-link {
-    font-family: "Didact Gothic", sans-serif;
     font-weight: 400;
     font-size: 17px;
     padding-right: 30px;}
@@ -212,19 +248,8 @@ p,
     margin-right: 30px;
 }
 
-.nav-link:hover,
-.nav-link:focus,
-.nav-item:hover,
-.navbar-brand:hover,
-#navbarDarkDropdownMenuLink:focus,
-.dropdown-item:focus {
-    color: #00cd96;
-}
-
 .card-link {
     text-decoration: none;
-    color: #00cd96;
-    font-family: "Fredoka", sans-serif;
     font-weight: 800;
 }
 
@@ -232,7 +257,6 @@ p,
     max-width: 600px;
     padding: 100px 50px;
 }
-
 
 .About-text {
     padding-top: 0px;
@@ -246,15 +270,16 @@ p,
 
 .project-background-title-1,
 .project-background-title-2 {
-    font-family: "Darker Grotesque", sans-serif;
     font-weight: 800;
-    font-size: 40px;
+}
+
+.project-detail-h3,
+.footer-heading {
+    font-size: 30px;
+    font-weight: 700;
 }
 
 .project-detail-h3 {
-    font-family: "Didact Gothic", sans-serif;
-    font-weight: 700;
-    font-size: 30px;
     font-style: italic;
 }
 
@@ -269,16 +294,11 @@ p,
 }
 
 .footer-heading {
-    font-family: "Fredoka", sans-serif;
-    font-size: 30px;
-    font-weight: 700;
-    color: #00cd96;
     padding-bottom: 15px;
 }
 
 .footer-links {
     text-decoration: none;
-    font-family: "Didact Gothic", sans-serif;
     font-weight: 400;
     font-size: 16px;
     line-height: 25px;
