@@ -43,7 +43,7 @@ button,
 
 .dropdown-menu {
     background-color: #42be99;
-    border: groove 5px #357f69;
+    border: double 5px #357f69;
 }
 
 .navbar-toggler {
