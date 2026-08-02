@@ -14,6 +14,12 @@ Global Styles and UI Components
     padding: 15px;
 }
 
+@media (max-width: 993px) {
+    .navbar.navbar-expand-lg {
+        justify-content: space-between;
+    }
+}
+
 .card {
     background-color: #140A0A;
     border-radius: 20px;
