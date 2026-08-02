@@ -362,8 +362,7 @@ Page-Specific Styles
 .Showcase-section-1,
 .BrandingDesign,
 .Service-design,
-.AboutDesign,
-.background1 {
+.AboutDesign {
    background-image: url(../images/Showcase-Background.png);
    background-size: cover;
    background-repeat: no-repeat;
