@@ -144,7 +144,6 @@ h1 {
     color: #140A0A;
 }
 
-.Hero-text,
 .Content-title,
 .dropdown-menu.dropdown-menu-dark,
 .dropdown-item:hover,
@@ -170,23 +169,34 @@ p,
 #navbarDarkDropdownMenuLink:focus,
 .dropdown-item:focus,
 .card-link,
-.footer-heading {
+.footer-heading,
+.hero-state {
     color:#00cd96;
+}
+
+.hero-headline {
+    font-size: 200px;
+    margin: 0;
+    display: inline-block;
+    padding: 15px;
 }
 
 @media screen and (max-width: 993px) {
     .hero-headline {
-        font-size: 65px;
-        text-align: center;
-        color: #FFFFFF;
+        font-size: 125px;
+        padding: 5px;
     }
 
     .Hero-text {
-        text-align: center;
         padding: 0%;
         max-width: 100%;
     }
     
+}
+
+.hero-state {
+    font-weight: 600;
+    font-style: italic;
 }
 
 h2 {
@@ -251,11 +261,6 @@ p {
 .card-link {
     text-decoration: none;
     font-weight: 800;
-}
-
-.Hero-text {
-    max-width: 600px;
-    padding: 100px 50px;
 }
 
 .About-text {
@@ -325,14 +330,7 @@ Page-Specific Styles
 }
 
 .background1 {
-    background-image: url(../images/hero_section.webp);
-    background-repeat: no-repeat;
-    background-size: cover;
     background-color: #140A0A;
-
-    display: flex;
-    align-items: center;
-    justify-content: flex-end;
 }
 
 @media (max-width: 993px) {
@@ -356,7 +354,8 @@ Page-Specific Styles
 .Showcase-section-1,
 .BrandingDesign,
 .Service-design,
-.AboutDesign {
+.AboutDesign,
+.background1 {
    background-image: url(../images/Showcase-Background.png);
    background-size: cover;
    background-repeat: no-repeat;
