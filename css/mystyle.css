@@ -10,6 +10,8 @@ Global Styles and UI Components
 
 .navbar.navbar-expand-lg {
     background-color: #140A0A;
+    justify-content: center;
+    padding: 15px;
 }
 
 .card {
