@@ -278,7 +278,7 @@ p {
 
 .blockquote, .blockquote-2 {
     font-weight: 700;
-    font-size: 25px;
+    font-size: 23px;
 }
 
 .project-background-title-1,
@@ -315,6 +315,12 @@ p {
     font-weight: 400;
     font-size: 16px;
     line-height: 25px;
+}
+
+@media (max-width: 993px) {
+    .footer-item {
+        padding-bottom: 12px;
+    }
 }
 
 .Service-title {
