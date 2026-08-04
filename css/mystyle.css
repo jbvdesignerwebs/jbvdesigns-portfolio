@@ -118,14 +118,14 @@ Typography
 h1,
 .navbar-brand,
 .hero-headline,
-.card-link,
-.footer-heading {
+.card-link {
     font-family: "Fredoka", sans-serif;
 }
 
 h2,
 .project-background-title-1,
-.project-background-title-2 {
+.project-background-title-2,
+.footer-heading {
     font-family: "Darker Grotesque", sans-serif;
 }
 
@@ -289,11 +289,15 @@ p {
 .project-detail-h3,
 .footer-heading {
     font-size: 30px;
-    font-weight: 700;
+}
+
+.footer-heading {
+    font-weight: 800;
 }
 
 .project-detail-h3 {
     font-style: italic;
+    font-weight: 700;
 }
 
 .project-detail-body {
