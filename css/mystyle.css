@@ -54,6 +54,7 @@ button,
     border: double 5px #357f69;
 }
 
+
 .navbar-toggler {
     margin-right: 30px;
     border: solid 5px #FFFFFF;
@@ -384,7 +385,7 @@ Page-Specific Styles
 }
 
 .About-section {
-    background-color: #140A0A;
+    background-image: linear-gradient(180deg, #271C1C 5%, #140A0A 100%);
     padding-bottom: 32px;
 }
 
