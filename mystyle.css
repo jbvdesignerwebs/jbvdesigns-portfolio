@@ -1,0 +1,488 @@
+/********************************
+Global Styles and UI Components
+**********************************/
+
+.container1{
+    padding-left: 40px;
+    padding-right: 40px;
+    position: relative;
+}
+
+.navbar.navbar-expand-lg {
+    background-color: #140A0A;
+    justify-content: center;
+    padding: 15px;
+}
+
+@media (max-width: 993px) {
+    .navbar.navbar-expand-lg {
+        justify-content: space-between;
+    }
+}
+
+.card {
+    background-color: #140A0A;
+    border-radius: 20px;
+    overflow: hidden;
+    max-width: 100%;
+    max-height: 100%;
+    border: none;
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+}
+
+.card-img-top {
+    object-fit: cover;
+    display: block;
+    height: 300px;
+    width: 100%;
+}
+
+.card-overview {
+    box-sizing: border-box;
+    position: absolute;
+    padding-right: 20px;
+    visibility: hidden;
+    max-height: 0;
+    transition: 
+        max-height 0.3s ease-in-out;
+}
+
+.card:hover {
+    cursor: pointer;
+    height: 465px;
+    transform: translateY(-10px);
+    box-shadow: 0px 10px 20px rgba(38, 0, 16, 0.3);
+}
+
+.card:hover .card-overview {
+    visibility: visible;
+    opacity: 1;
+    max-height: 200px;
+}
+
+@media (max-width: 990px) {
+
+    .card {
+        min-height: 495px;
+    }
+
+    .card-overview {
+        visibility: visible;
+        opacity: 1;
+        max-height: none;
+        overflow: visible;
+    }
+    
+}
+
+@media (max-width: 768px) {
+    .card {
+        min-height: 465px;
+    }
+}
+
+@media (max-width: 493px) {
+    .card {
+        min-height: 495px;
+    }
+}
+
+a,
+button,
+.card,
+.nav-link,
+.navbar-brand {
+    transition: 0.2s ease;
+}
+
+.dropdown-menu {
+    background-color: #42be99;
+    border: double 5px #357f69;
+}
+
+
+.navbar-toggler {
+    margin-right: 30px;
+    border: solid 5px #FFFFFF;
+    font-size: 28px;
+    background-color: white;
+}
+
+.btn.btn-primary,
+.btn.btn-secondary,
+p {
+    font-size: 20px;
+}
+
+.btn.btn-primary {
+    background-color: #271C1C;
+    border: none;
+    font-weight: 700;
+}
+
+.btn.btn-primary:hover {
+    background-color: #140A0A;
+}
+
+.btn.btn-secondary {
+    background-color: #00cd96;
+    border: none;
+    color: #140A0A;
+    font-weight: 700;
+}
+
+.btn.btn-secondary:hover {
+    background-color: #FFFFFF;
+    color: #140A0A;
+}
+
+.Contact-button {
+    justify-content: center;
+}
+
+.Contact-icon {
+    width: 23px;
+    height: auto;
+    margin-right: 8px;
+    margin-bottom: 2%;
+}
+
+.social-icons {
+    display: flex;
+    gap: 24px;
+}
+
+.footer-line {
+    padding-top: 15px;
+    border-width: 7px;
+    color: #00cd96;
+    opacity: 1;
+}
+
+/********************************
+Typography
+**********************************/
+h1,
+.navbar-brand,
+.hero-headline,
+.card-link {
+    font-family: "Fredoka", sans-serif;
+}
+
+h2,
+.project-background-title-1,
+.project-background-title-2,
+.footer-heading {
+    font-family: "Darker Grotesque", sans-serif;
+}
+
+p,
+.nav-item, 
+.dropdown, 
+.nav-link,
+.project-detail-h3,
+.footer-links {
+    font-family: "Didact Gothic", sans-serif;
+}
+
+h1 {
+    font-size: 80px;
+    font-weight: 700;
+}
+
+.dropend,
+.dropend:focus,
+.dropend:active,
+.dropdown-toggle,
+.dropdown-item,
+.Section-title-2 {
+    color: #140A0A;
+}
+
+.Content-title,
+.dropdown-menu.dropdown-menu-dark,
+.dropdown-item:hover,
+.dropdown-item:focus,
+h1,
+h2,
+p,
+.nav-item,
+.dropdown,
+.nav-link,
+.navbar-brand,
+.footer-links,
+.services-list,
+.project-detail-h3 {
+    color: #FFFFFF;
+}
+
+.hero-headline,
+.nav-link:hover,
+.nav-link:focus,
+.nav-item:hover,
+.navbar-brand:hover,
+#navbarDarkDropdownMenuLink:focus,
+.dropdown-item:focus,
+.card-link,
+.footer-heading,
+.hero-state {
+    color:#00cd96;
+}
+
+.hero-headline {
+    font-size: 200px;
+    margin: 0;
+    display: inline-block;
+    padding: 15px;
+}
+
+@media screen and (max-width: 993px) {
+    .hero-headline {
+        font-size: 100px;
+        padding: 5px;
+    }
+
+    .Hero-text {
+        padding: 0%;
+        max-width: 100%;
+    }
+    
+}
+
+.hero-state {
+    font-weight: 600;
+    font-style: italic;
+}
+
+h2 {
+    font-weight: 500;
+    line-height: 60px;
+}
+
+h2,
+.project-background-title-1,
+.project-background-title-2 {
+    font-size: 40px;
+}
+
+.Section-title, .Section-title-2 {
+   font-weight: 800;
+   font-size: 60px;
+   text-align: left;
+}
+
+.Showcase-title {
+    color: #3d2b2b;
+}
+
+.dropdown-item {
+    font-weight: 600;
+}
+
+.dropdown-menu.dropdown-menu-dark .dropdown-item:hover,
+.dropdown-menu.dropdown-menu-dark .dropdown-item:focus{
+    background-color: #140A0A;
+}
+
+.Showcase-title, 
+.Content-title {
+    font-weight: 600;
+}
+
+p {
+    font-weight: 400;
+}
+
+.navbar-brand {
+    font-weight: 800;
+    font-size: 40px;
+    padding-left: 30px;
+}
+
+.nav-item {
+    margin-left: 30px;
+}
+
+.nav-item, .dropdown, .nav-link {
+    font-weight: 400;
+    font-size: 17px;
+    padding-right: 30px;}
+
+.navbar-nav {
+    margin-left: auto;
+    margin-right: 30px;
+}
+
+.card-link {
+    text-decoration: none;
+    font-weight: 800;
+}
+
+.About-text {
+    padding-top: 0px;
+    flex: 1;
+}
+
+.blockquote, .blockquote-2 {
+    font-weight: 700;
+    font-size: 23px;
+}
+
+.project-background-title-1,
+.project-background-title-2 {
+    font-weight: 800;
+}
+
+.project-detail-h3,
+.footer-heading {
+    font-size: 30px;
+}
+
+.footer-heading {
+    font-weight: 800;
+}
+
+.project-detail-h3 {
+    font-style: italic;
+    font-weight: 700;
+}
+
+.project-detail-body {
+    margin-left: 7%;
+}
+
+.footer-heading {
+    padding-bottom: 15px;
+}
+
+.footer-links {
+    text-decoration: none;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 25px;
+}
+
+@media (max-width: 993px) {
+    .footer-item {
+        padding-bottom: 12px;
+    }
+}
+
+.Service-title {
+    font-weight: 800;
+    padding-left: 5px;
+}
+
+.services-list {
+    font-weight: 600;
+    font-size: 23px;
+}
+
+/********************************
+Page-Specific Styles
+**********************************/
+.background2{
+    width: 100%;
+    height: auto;
+    background-color: #271C1C;
+    background-image: linear-gradient(180deg, #271C1C 50%, #140A0A 100%);
+}
+
+.background1 {
+    background-color: #140A0A;
+}
+
+@media (max-width: 993px) {
+    .background1 {
+        justify-content: center;
+        text-align: center;
+    }
+
+    .Hero-text {
+        padding: 40px 20px;
+    }
+}
+
+.Showcase-section,
+.Showcase-section-1,
+.BrandingDesign{
+   background-color: #53ba92;
+}
+
+.Showcase-section,
+.Showcase-section-1,
+.BrandingDesign,
+.Service-design,
+.AboutDesign {
+   background-image: url(../images/Showcase-Background.png);
+   background-size: cover;
+   background-repeat: no-repeat;
+   background-position: center;
+   transition: background-image 3s ease-in-out;
+}
+
+.Showcase-section-1 {
+    background-image: url(../images/Showcase-Background-Index.png);
+    transition: background-image 3s ease-in-out;
+}
+
+.About-section {
+    background-image: linear-gradient(180deg, #271C1C 5%, #140A0A 100%);
+    padding-bottom: 32px;
+}
+
+.About-image {
+    max-width: 35%;
+    height: auto;
+    border-radius: 20px;
+    overflow: hidden;
+}
+
+@media (max-width: 993px) {
+    .About-image {
+        max-width: 90%;
+        justify-content: center;
+    }
+}
+
+.About-content {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between; 
+    gap: 20px;
+    padding: 20px;
+}
+
+.services {
+    padding: 15px 30px;
+    border-radius: 20px;
+}
+
+.Service-break {
+    border-width: 5px;
+    width: 60%;
+    opacity: 1;
+    margin: 0;
+    padding-bottom: 24px;
+    color: #00cd96;
+}
+
+
+
+.project-detail-visuals,
+.project-detail-visuals-1 {
+    display: block;
+    margin-top: 0px;
+    margin-bottom: 24px;
+    margin-right: auto;
+    margin-left: auto;
+    max-width: 60%;
+}
+
+@media (max-width: 993px) {
+    .project-detail-visuals,
+    .project-detail-visuals-1 {
+        max-width: 80%;
+    }
+}
