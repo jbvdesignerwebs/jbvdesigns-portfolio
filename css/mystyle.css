@@ -190,6 +190,12 @@ h1 {
     font-weight: 700;
 }
 
+@media (max-width: 768px) {
+    .Showcase-title {
+        font-size: 65px;
+    }
+}
+
 .dropend,
 .dropend:focus,
 .dropend:active,
