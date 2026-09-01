@@ -181,7 +181,8 @@ p,
 .dropdown, 
 .nav-link,
 .project-detail-h3,
-.footer-links {
+.footer-links,
+.content-warning {
     font-family: "Didact Gothic", sans-serif;
 }
 
@@ -194,6 +195,12 @@ h1 {
     .Showcase-title,
     .Content-title {
         font-size: 65px;
+    }
+}
+
+@media (max-width: 768px) {
+    .project-title {
+        font-size: 50px;
     }
 }
 
@@ -264,6 +271,19 @@ p,
 h2 {
     font-weight: 500;
     line-height: 60px;
+}
+
+.content-warning {
+   font-weight: 800; 
+   font-size: 50px; 
+   color: #d10d6f; 
+   font-style: italic;
+}
+
+@media (max-width: 768px) {
+    .content-warning {
+        font-size: 35px;
+    }
 }
 
 h2,
